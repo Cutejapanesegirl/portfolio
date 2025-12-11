@@ -63,26 +63,74 @@
         <!-- 프로젝트 섹션 -->
         <section class="mb-12 bg-white rounded-lg p-6 shadow-md animate-fade-in">
             <h2 class="text-2xl font-bold mb-4 text-orange-red">🎮 Projects</h2>
-            <div class="space-y-6">
+            <div class="space-y-6" id="projects-container">
+                <div class="project-card cursor-pointer transition-all duration-300 overflow-hidden">
+                    <div class="project-header flex justify-between items-center">
+                        <h3 class="text-xl font-bold">Magnum (개발 중)</h3>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content mt-2">
+                        <p class="text-gray-600 mb-2">장르: 슈팅 로그라이크 게임</p>
+                        <p class="text-gray-700">다양한 무기와 능력을 활용해 적을 물리치는 탑다운 슈팅 로그라이크 게임. Unity로 개발 중이며 플레이 감각과 UI/UX 개선에 집중하고 있음.</p>
+                    </div>
+                </div>
+                <!-- 인천재능대학교 소개 웹사이트 -->
                 <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2"> Magnum (개발 중)</h3>
-                    <p class="text-gray-600 mb-2">장르: 슈팅 로그라이크 게임</p>
-                    <p class="text-gray-700">다양한 무기와 능력을 활용해 적을 물리치는 탑다운 슈팅 로그라이크 게임. Unity로 개발 중이며 플레이 감각과 UI/UX 개선에 집중하고 있음.</p>
+                    <div class="project-header flex justify-between items-center">
+                        <h3 class="text-xl font-bold">인천재능대학교 소개 웹사이트</h3>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content mt-2">
+                        <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript, GitHub Pages</p>
+                        <p class="text-gray-700">학교를 소개하는 목적의 반응형 웹사이트. 클린 UI/UX를 고려하여 사용자 친화적인 정보 전달에 초점을 맞춤.</p>
+                        <p class="text-gray-700">
+                            <a href="https://ff889194.jeiu-map.pages.dev/" class="hover:underline text-blue-500">
+                                https://ff889194.jeiu-map.pages.dev/
+                            </a>
+                        </p>
+                    </div>
                 </div>
+
+                <!-- 애니메이션 추천기 -->
                 <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2"> 인천재능대학교 소개 웹사이트</h3>
-                    <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript, GitHub Pages</p>
-                    <p class="text-gray-700">학교를 소개하는 목적의 반응형 웹사이트. 클린 UI/UX를 고려하여 사용자 친화적인 정보 전달에 초점을 맞춤.</p>
+                    <div class="project-header flex justify-between items-center">
+                        <h3 class="text-xl font-bold">애니메이션 추천기</h3>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content mt-2">
+                        <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript</p>
+                        <p class="text-gray-700">애니메이션 추천 사이트. 사용자가 재밌게 본 애니메이션을 선택하면 비슷한 장르의 애니메이션을 추천해주는 사이트.</p>
+                        <p class="text-gray-700">
+                            <a href="https://cutejapanesegirl-animation-app-1cd620.streamlit.app/" class="hover:underline text-blue-500">
+                                https://cutejapanesegirl-animation-app-1cd620.streamlit.app/
+                            </a>
+                        </p>
+                    </div>
                 </div>
-                    <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2"> 애니메이션 추천기</h3>
-                    <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript</p>
-                    <p class="text-gray-700">애니메이션 추천 사이트. 사용자가 재밌게 본 애니메이션을 선택하면 비슷한 장르의 애니메이션을 추천해주는 사이트.</p>
-                </div>
-                    <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2"> 서베이 스튜디오</h3>
-                    <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript, OpenRouter, Cloudflare</p>
-                    <p class="text-gray-700">AI 기반 자동 설문 제작 툴. 설문의 주제를 입력하면 자동으로 AI가 설문을 제작해줌.</p>
+
+                <!-- 서베이 스튜디오 -->
+                <div class="project-card">
+                    <div class="project-header flex justify-between items-center">
+                        <h3 class="text-xl font-bold">서베이 스튜디오</h3>
+                        <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="project-content mt-2">
+                        <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript, OpenRouter, Cloudflare</p>
+                        <p class="text-gray-700">AI 기반 자동 설문 제작 툴. 설문의 주제를 입력하면 자동으로 AI가 설문을 제작해줌.</p>
+                        <p class="text-gray-700">
+                            <a href="https://survey-project-a59.pages.dev/" class="hover:underline text-blue-500">
+                                https://2d2b3c9f.survey-studio.pages.dev/
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
