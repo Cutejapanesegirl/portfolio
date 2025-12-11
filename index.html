@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-soft-gray text-deep-gray">
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="container mx-auto px-4 py-8 max-w-4xl space-y-6">
         <!-- 헤더 섹션 -->
         <header class="text-center mb-12 animate-fade-in">
             <div class="mb-6">
@@ -74,6 +74,38 @@
                     <div class="project-content mt-2">
                         <p class="text-gray-600 mb-2">장르: 슈팅 로그라이크 게임</p>
                         <p class="text-gray-700">다양한 무기와 능력을 활용해 적을 물리치는 탑다운 슈팅 로그라이크 게임. Unity로 개발 중이며 플레이 감각과 UI/UX 개선에 집중하고 있음.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/magnum-1.png" alt="마그넘 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/magnum-2.png" alt="마그넘 2" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+                        
+                        <!-- Magnum 프로젝트 비디오 -->
+                        <div class="mt-4 mb-4">
+                            <video controls class="w-full rounded-lg border">
+                                <source src="image/magnum-video.mp4" type="video/mp4">
+                                귀하의 브라우저는 비디오 태그를 지원하지 않습니다.
+                            </video>
+                        </div>
+                        
+                        <p class="text-gray-700 font-medium mb-1">개인의 기여 : 개인의 기여 100%인 개인 프로젝트 </p>
+                        <p class="text-gray-700 font-medium **mb-5**">완성도는 떨어지나 레벨디자인, 기획, 제작까지 전부 혼자서 함. </p> 
+                        <p></p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/magnum-5.png" alt="마그넘 5" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/magnum-6.png" alt="마그넘 6" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+                        <p class="text-gray-700">문제 발생 : 플레이어 오브젝트가 기존에 있던 맵에서 다른 맵으로 이동할 때 적용된 능력치가 전부 초기화 되는 현상 발생.</p>
+                        <p class="text-gray-700">원인 : 유니티는 다른 씬이 로드 될 때 기존 씬에 있던 오브젝트들은 전부 파괴됨. </p>
+                        <p class="text-gray-700">문제 해결(Solution) : 싱글톤을 적용해 주요 오브젝트들이 다른 씬으로 이동해도 파괴되지 않도록 싱글톤 그룹을 만들어 수정된 데이터를 계속 유지시키도록 바꿈. </p>
+                        </div>
                     </div>
                 </div>
                 <!-- 인천재능대학교 소개 웹사이트 -->
@@ -86,12 +118,38 @@
                     </div>
                     <div class="project-content mt-2">
                         <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript, GitHub Pages</p>
-                        <p class="text-gray-700">학교를 소개하는 목적의 반응형 웹사이트. 클린 UI/UX를 고려하여 사용자 친화적인 정보 전달에 초점을 맞춤.</p>
-                        <p class="text-gray-700">
-                            <a href="https://ff889194.jeiu-map.pages.dev/" class="hover:underline text-blue-500">
-                                https://ff889194.jeiu-map.pages.dev/
+                        <p class="text-gray-700 mb-4">학교를 소개하는 목적의 반응형 웹사이트. 클린 UI/UX를 고려하여 사용자 친화적인 정보 전달에 초점을 맞춤.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/jeiu-map-.png" alt="인천재능대학교 소개 웹사이트 미리보기 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/jeiu-map-1.png" alt="인천재능대학교 소개 웹사이트 미리보기 2" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-2">
+                            <a href="https://5e720ad5.jeiu-map.pages.dev/" class="hover:underline text-blue-500">
+                                https://5e720ad5.jeiu-map.pages.dev/
                             </a>
                         </p>
+                        <p class="text-gray-700 font-medium mb-1">개인의 기여 : 웹사이트 기획, 코딩, UI/UX 디자인</p>
+                        <p class="text-gray-700 font-medium mb-1">모종의 이유로 팀이 중간에 옮겨져서 갔는데
+아직 아이디어만 있고 개발이 시작이 안 돼서 당장 발표가 다다음주라 직접 AI와 VS CODE사용해 웹사이트 제작</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/jeiu-map-2.png" alt="인천재능대학교 소개 웹사이트 미리보기 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/jeiu-map-3.png" alt="인천재능대학교 소개 웹사이트 미리보기 2" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/jeiu-map-4.png" alt="인천재능대학교 소개 웹사이트 미리보기 2" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+                        <p class="text-gray-700">문제 발생 : POC 발표때 사용할 웹사이트를 제작하는데 문제가 생김</p>
+                        <p class="text-gray-700">원인 : 한 팀원이 디자인을 수정하기 위해 웹사이트의 파일을 가져가 수정했는데 그 웹사이트가 제대로 작동하지 않음.</p>
+                        <p class="text-gray-700">문제 해결(Solution) : 웹사이트를 고쳐보려 했으나 안에 있는 코드를 제 실력으론 도저히 파악할 수가 없어서 팀원들과의 소통을 통해 기존 웹사이트로 발표 진행.</p>
                     </div>
                 </div>
 
@@ -105,12 +163,32 @@
                     </div>
                     <div class="project-content mt-2">
                         <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript</p>
-                        <p class="text-gray-700">애니메이션 추천 사이트. 사용자가 재밌게 본 애니메이션을 선택하면 비슷한 장르의 애니메이션을 추천해주는 사이트.</p>
+                        <p class="text-gray-700">애니메이션 추천 사이트. 사용자가 재밌게 본 애니메이션을 선택하면 비슷한 취향의 사람들이 좋아하는 애니메이션을 추천해주는 사이트.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/animation-.png" alt="애니메이션 추천 웹사이트 미리보기 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/animation-1.png" alt="애니메이션 추천 웹사이트 미리보기 2" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
                         <p class="text-gray-700">
                             <a href="https://cutejapanesegirl-animation-app-1cd620.streamlit.app/" class="hover:underline text-blue-500">
                                 https://cutejapanesegirl-animation-app-1cd620.streamlit.app/
                             </a>
                         </p>
+                        <p class="text-gray-700 font-medium mb-1">개인의 기여 : 100% 개인 프로젝트 및 100% AI 활용 제작</p>
+                        <p class="text-gray-700 font-medium mb-1">다른 웹사이트와의 차별점을 두기 위해 장르 키워드, 평점 분포 뿐만 아니라 '인생작' 이라는 시스템 도입. </p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/animation-2.png" alt="애니메이션 추천 웹사이트 미리보기 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+
+                        <p class="text-gray-700">문제 발생 : 발표를 해야하는데 애니메이션 추천을 하는데 필요한 다른 사용자들의 데이터가 없음 </p>
+                        <p class="text-gray-700">원인 : 데이터를 수집하기 위한 방법을 찾지 못함</p>
+                        <p class="text-gray-700">문제 해결(Solution) : 임시로 더미 데이터를 집어넣어 작동 가능하게 만듦. </p>
                     </div>
                 </div>
 
@@ -125,18 +203,37 @@
                     <div class="project-content mt-2">
                         <p class="text-gray-600 mb-2">기술 스택: HTML/CSS/JavaScript, OpenRouter, Cloudflare</p>
                         <p class="text-gray-700">AI 기반 자동 설문 제작 툴. 설문의 주제를 입력하면 자동으로 AI가 설문을 제작해줌.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/survey-1.png" alt="서베이 스튜디오 웹사이트 미리보기 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/survey-2.png" alt="서베이 스튜디오 웹사이트 미리보기 2" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
                         <p class="text-gray-700">
                             <a href="https://survey-project-a59.pages.dev/" class="hover:underline text-blue-500">
                                 https://2d2b3c9f.survey-studio.pages.dev/
                             </a>
                         </p>
+                        <p class="text-gray-700 font-medium mb-1">개인의 기여 : 웹사이트 초안 제작, 아이디어 및 피드백 취합, 중간 발표, 도록 수정, 캡스톤 당일 시연 설명</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="border rounded-lg overflow-hidden">
+                                <img src="image/survey-6.png" alt="애니메이션 추천 웹사이트 미리보기 1" class="w-full h-auto hover:opacity-90 transition-opacity">
+                            </div>
+                        </div>
+                       
+                        <p class="text-gray-700">문제 발생 : 도록 제출이 당일까지인데 아직 미완성</p>
+                        <p class="text-gray-700">원인 : 다른 조원들은 더 중요한 일들을 맡느라 도록까지 신경쓸 겨를이 없음</p>
+                        <p class="text-gray-700">문제 해결(Solution) : 직접 피그마 웹사이트에 들어가 도록 수정해주시는 교수님과 함께 Figma 작업 후 마무리.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 자격증 섹션 -->
-        <section class="mb-12 bg-white rounded-lg p-6 shadow-md animate-fade-in">
+        <section class="bg-white rounded-lg p-6 shadow-md animate-fade-in">
             <h2 class="text-2xl font-bold mb-4 text-orange-red">🏅 자격증</h2>
             <ul class="list-disc list-inside space-y-2 text-gray-700">
                 <li>GTQ(그래픽기술자격) 1급, 2급</li>
