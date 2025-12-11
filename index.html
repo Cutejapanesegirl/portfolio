@@ -12,10 +12,14 @@
         <!-- 헤더 섹션 -->
         <header class="text-center mb-12 animate-fade-in">
             <div class="mb-6">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjRkZEQjRBIi8+PGNpcmNsZSBjeD0iNzAiIGN5PSI4MCIgcj0iMTAiIGZpbGw9IiMzMzMiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSI4MCIgcj0iMTAiIGZpbGw9IiMzMzMiLz48cGF0aCBkPSJNNzAgMTIwIHEzMCAyMCA2MCAwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==" alt="Cute Emoji" class="w-32 h-32 mx-auto mb-4 animate-bounce">
+                <img id="profileImage" src="image/MY1.jpg" alt="Profile Image" class="w-32 h-32 mx-auto mb-4 rounded-full object-cover border-4 border-orange-100 shadow-lg animate-bounce delay-1000">
             </div>
             <h1 class="text-4xl font-bold mb-4">하경완</h1>
-            <p class="text-lg text-gray-600">개발자 지망생</p>
+            <p class="text-lg text-gray-600 mb-4">개발자 지망생</p>
+            <!-- QR 코드 추가 -->
+            <div class="flex justify-center my-4">
+                <img src="image/QR.png" alt="QR Code" class="w-32 h-32 border-2 rounded-lg p-2 bg-white">
+            </div>
         </header>
 
                 <!-- 연락처 섹션 -->
@@ -32,7 +36,7 @@
 
         <!-- 소개 섹션 -->
         <section class="mb-12 bg-white rounded-lg p-6 shadow-md animate-fade-in">
-            <h2 class="text-2xl font-bold mb-4 text-orange-red">👋 About Me</h2>
+            <h2 class="text-2xl font-bold mb-4 text-orange-red"> About Me</h2>
             <p class="text-gray-700 leading-relaxed">
                 안녕하세요. 인천재능대학교 2학년에 재학 중인 개발자 지망생 하경완입니다.<br><br>
                 개발이라는 길에 들어서게 된 계기는 아버지의 영향이 컸지만 그 과정에서 점점 코드를 통해 세상을 직접 만들고 구현하는 경험에 매료되었습니다. 
@@ -43,7 +47,7 @@
 
         <!-- 기술 스택 섹션 -->
         <section class="mb-12 bg-white rounded-lg p-6 shadow-md animate-fade-in">
-            <h2 class="text-2xl font-bold mb-4 text-orange-red">🧰 Skills</h2>
+            <h2 class="text-2xl font-bold mb-4 text-orange-red"> Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="p-4 border rounded-lg tech-card">
                     <h3 class="font-bold mb-2">Game Engine</h3>
@@ -62,7 +66,7 @@
 
         <!-- 프로젝트 섹션 -->
         <section class="mb-12 bg-white rounded-lg p-6 shadow-md animate-fade-in">
-            <h2 class="text-2xl font-bold mb-4 text-orange-red">🎮 Projects</h2>
+            <h2 class="text-2xl font-bold mb-4 text-orange-red"> Projects</h2>
             <div class="space-y-6" id="projects-container">
                 <div class="project-card cursor-pointer transition-all duration-300 overflow-hidden">
                     <div class="project-header flex justify-between items-center">
@@ -234,7 +238,7 @@
 
         <!-- 자격증 섹션 -->
         <section class="bg-white rounded-lg p-6 shadow-md animate-fade-in">
-            <h2 class="text-2xl font-bold mb-4 text-orange-red">🏅 자격증</h2>
+            <h2 class="text-2xl font-bold mb-4 text-orange-red"> 자격증</h2>
             <ul class="list-disc list-inside space-y-2 text-gray-700">
                 <li>GTQ(그래픽기술자격) 1급, 2급</li>
                 <li>ITQ(정보기술자격) A등급</li>
@@ -242,6 +246,15 @@
         </section>
 
     </div>
+    <script>
+        // 1초 후에 프로필 이미지의 애니메이션 제거
+        setTimeout(() => {
+            const profileImage = document.getElementById('profileImage');
+            if (profileImage) {
+                profileImage.classList.remove('animate-bounce');
+            }
+        }, 1000);
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
